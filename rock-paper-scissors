@@ -1,4 +1,4 @@
-%rock-paper-scissors
+%rock-paper-scissors game
 
 inp = raw_input('enter RSPLS')
 if inp == 'rock':
