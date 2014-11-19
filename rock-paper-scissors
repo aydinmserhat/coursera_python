@@ -1,5 +1,7 @@
 ##rock-paper-scissors game user defined
 
+import random
+
 inp = raw_input('enter RSPLS')
 if inp == 'rock':
     print 'Player chooses' , inp
@@ -18,11 +20,16 @@ elif inp == 'scissors':
     inp = 4
 else:
     print 'invalid input' 
-    
-
-import random
 
 comp = random.randrange(0,5)
+if (inp - comp) % 5 >= 3 :
+    print 'computer wins'
+elif (inp - comp) % 5 == 0 :
+    print 'tied'
+else : 
+    print 'player wins' 
+    
+
 if comp == 0:
     comp = 'rock'
     print 'computer chooses' , comp
@@ -41,16 +48,8 @@ elif comp == 4:
 else:
     print 'invalid computer chooses' 
     
-comp=random.randrange(0,5)
     
 
-if (inp - comp) % 5 >= 3 :
-    print 'computer wins'
-elif (inp - comp) % 5 == 0 :
-    print 'tied'
-else : 
-    print 'player wins' 
-    
 
 
 
