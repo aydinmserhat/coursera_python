@@ -1,4 +1,4 @@
-##rock-paper-scissors game user define
+##rock-paper-scissors game user defined
 
 inp = raw_input('enter RSPLS')
 if inp == 'rock':
